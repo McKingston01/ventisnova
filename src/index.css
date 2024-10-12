@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background: #1f332d;
+  font-family: 'Poppins', sans-serif;
+}
+/* Estilo global para autocompletado en los input */
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important; /* Cambia el color del texto autocompletado */
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important; /* Elimina el color de fondo */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill::first-line {
+  font-family: 'Poppins', sans-serif; /* Asegura que la fuente no cambie */
+}
+
+.bg-custom-gradient { /* gradiente principal */
+  @apply bg-gradient-to-b from-[#174839] to-[#44A385];
+}
+.bg-custom-gradient-dos {
+  @apply bg-gradient-to-b from-[#1E473A] to-[#2C6653];
+}
+
+.bg-custom-gradient-black {
+  @apply bg-gradient-to-b from-[#122C24] to-[#1F332D];
+}
